@@ -1,0 +1,11 @@
+
+:root {color-scheme:light;--ink:#1d302d;--muted:#526560;--paper:#fafbf7;--line:#d6e1dc;--accent:#153f3a;--wash:#edf3ed;}
+* {box-sizing:border-box}html {font-size:100%}body {margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.7}
+a {color:var(--accent);text-underline-offset:3px}a:hover {text-decoration-thickness:2px}a:focus-visible {outline:3px solid #b06c23;outline-offset:4px}
+.skip {position:absolute;left:-9999px}.skip:focus {left:1rem;top:1rem;background:white;z-index:3;padding:.5rem}
+header,main,footer {max-width:52rem;margin:auto;padding:1.5rem}header {display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand {font-weight:750;text-decoration:none;font-size:1.05rem;letter-spacing:-.02em}nav {display:flex;gap:1.1rem;flex-wrap:wrap}nav a {font-size:.95rem}
+main {padding-top:3rem;padding-bottom:3rem}h1 {font-size:clamp(2rem,6vw,3.2rem);line-height:1.13;letter-spacing:-.045em;margin:0 0 1rem}h2 {font-size:1.35rem;line-height:1.35;margin-top:2rem}p {margin:.8rem 0 1rem}.intro {font-size:1.15rem;max-width:44rem;color:var(--muted)}.eyebrow {text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:650;color:var(--muted)}
+.apps {display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}.app {border:1px solid var(--line);padding:1.5rem;border-radius:.6rem;background:white}.app h2 {margin:0 0 .6rem}.app p {margin:.6rem 0}.scope {display:inline-block;padding:.2rem .6rem;background:var(--wash);border-radius:.3rem;font-size:.9rem}.note {border-left:3px solid var(--accent);padding:.8rem 1.2rem;background:var(--wash);margin:1.5rem 0}li {margin:.5rem 0}code {font-size:.9em;overflow-wrap:anywhere}footer {border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}footer p {margin:.3rem 0}hr {border:0;border-top:1px solid var(--line);margin:2rem 0}
+@media(max-width:600px) {.apps {grid-template-columns:1fr}header,main,footer {padding-left:1.2rem;padding-right:1.2rem}main {padding-top:2rem}nav {gap:.9rem}}
+@media(prefers-reduced-motion:reduce) {* {scroll-behavior:auto}}
